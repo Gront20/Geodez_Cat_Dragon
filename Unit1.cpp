@@ -1,5 +1,5 @@
 //---------------------------------------------------------------------------
-
+ 
 #include <vcl.h>
 #pragma hdrstop
 #include <math.h>
@@ -771,7 +771,7 @@ void __fastcall TForm1::Button1Click(TObject *Sender)
    for(int i=0;i<Form1->test->Count;i++) delete Form1->test->Items[i];
    Form1->test->Clear();
 
-   //Êîò
+   //ÃŠÃ®Ã²
    GeneratePoint(Form1->test,3,-4);
 //   GeneratePoint(Form1->test,7,0);
 //   GeneratePoint(Form1->test,7,5);
@@ -830,7 +830,7 @@ void __fastcall TForm1::Button1Click(TObject *Sender)
    for(int i=0;i<Form1->test->Count;i++) delete Form1->test->Items[i];
    Form1->test->Clear();
 
-   //Äèíîçàâð
+   //Ã„Ã¨Ã­Ã®Ã§Ã Ã¢Ã°
    GeneratePoint(Form1->test,3,-1);
    GeneratePoint(Form1->test,1,2);
    GeneratePoint(Form1->test,1,4);
@@ -886,7 +886,7 @@ void __fastcall TForm1::Button2Click(TObject *Sender)
     {
          Complex *t2=(Complex *)(conmap1->grid->Items[i]);
 //===============================================================================================
-//    Êîíôîðìíîå îòîáðàæåíèå âíóòð.äèíîçàâðà -> åä.êðóã -> âíóòð.êîòà
+//    ÃŠÃ®Ã­Ã´Ã®Ã°Ã¬Ã­Ã®Ã¥ Ã®Ã²Ã®Ã¡Ã°Ã Ã¦Ã¥Ã­Ã¨Ã¥ Ã¢Ã­Ã³Ã²Ã°.Ã¤Ã¨Ã­Ã®Ã§Ã Ã¢Ã°Ã  -> Ã¥Ã¤.ÃªÃ°Ã³Ã£ -> Ã¢Ã­Ã³Ã²Ã°.ÃªÃ®Ã²Ã 
          Complex t1=GetInverseConformalMap(Form1->invconmap,GetConformalMap(Form1->conmap1,*t2));
 //===============================================================================================
          int x=int(t1.re*mash+double(offsetX));
